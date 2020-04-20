@@ -8,12 +8,17 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Loan Calculator</title>
+    <style>
+        #loading, #results{
+            display: none;
+        }
+    </style>
   </head>
   <body class="bg-dark">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 mx-auto">
+            <div class="col-md-5 mx-auto">
                 <div class="card card-body text-center mt-5">
                     <h1 class="heading display-5 pb-3">Loan Calculator</h1>
                     <form id="loan-form">
@@ -38,13 +43,13 @@
                     </form>
 
                     <!--     LOADER   -->
-                    <!-- <div id="loading">
-                        <img src="loading2.webp" height="80px" width="150px" alt="">
-                    </div> -->
+                    <div id="loading">
+                        <img src="loading2.webp" height="80px" width="150px">
+                    </div>
 
 
                     <!--    RESULTS     -->
-                    <div class="results">
+                    <div id="results" class="pt-4">
                         <h5>Results</h5>
                         <div class="form-group">
                             <div class="input-group">
